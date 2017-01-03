@@ -152,7 +152,7 @@ body {
     display: block !important;
 }
 .video-container {
-    position: relative;
+    position: fixed;
     bottom: 0%;
     left: 0%;
     height: 100%;
@@ -184,25 +184,48 @@ body {
   z-index: 999;
 }
 
+.name {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 370px;
+  font-family: 'Rancho', cursive;
+  font-size: 6.2em;
+  font-weight: 500;
+  color: #eee;
+  text-align: center;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
+}
+
 .buttons {
   position: relative;
   bottom: 200px;
+}
+
+.projects {
+  margin-top: 30px;
+  background-color: #222;
+  font-family: 'Rancho', cursive;
+  font-size: 44px;
+  color: #0fa;
+  text-align: center;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
 }
 
 
 .picture {
 	background: url('../images/stardust.png');
   background-repeat: repeat;
-
 }
 
 .section {
-  margin: 280px 0 0 0;
+  margin: 0 0 0 0;
   background-color: #333;
   padding: 2% 0;
   border-top: 2px solid #222;
   border-bottom: 15px solid #222;
 }
+
 
 .section a {
   margin: 0 2%;
@@ -211,6 +234,7 @@ body {
 .section img {
   padding: 0;
 
+  transition: .2s;
 }
 
 .section img:hover {
@@ -222,10 +246,12 @@ body {
 .section p {
   color: white;
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .section h1 {
   color: white;
+  margin-left: 10px;
 }
 
 .section div a {
@@ -235,10 +261,16 @@ body {
   text-decoration: none;
   float: right;
 
+  transition: .2s;
+
 }
 
 .section div a:hover {
   opacity: .7;
+}
+
+.section1 {
+  border-top: 5px solid #222;
 }
 
 .section2 {
@@ -246,6 +278,10 @@ body {
 }
 
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+.button a    { text-decoration: none; }
+.button p    { text-align: center; }
+.button sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
 
 .button
 {
@@ -259,7 +295,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   
-  margin: 3em auto;
+  margin: 1em auto;
   
   position: absolute; 
   top:0; right:0; bottom:0; left:0;
@@ -284,10 +320,6 @@ body {
   border-color: #0fa;
   background: #333;
 }
-
-.button a    { text-decoration: none; }
-.button p    { text-align: center; }
-.button sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
 
 
 .button span 
@@ -332,6 +364,14 @@ body {
   right: 0;
   top: 50%;
 } 
+
+.footer {
+  height: 400px;
+}
+
+.footer a img {
+  width: 100%;
+}
 
 
 
