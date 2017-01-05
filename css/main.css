@@ -276,6 +276,7 @@ body {
 .section2 {
   margin-top: 0;
 }
+/*Resume betton*/
 
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
@@ -365,14 +366,26 @@ body {
   top: 50%;
 } 
 
-.footer {
-  height: 400px;
+.fores {
+  background-color: rgba(0,0,0,.2);
+
 }
 
-.footer a img {
-  width: 100%;
+.footer1 {
+  height: 684px;
+
+  background: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.9))
 }
 
+.footer2 {
+  height: 684px;
+  background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,1))
+}
+
+.fores img {
+  margin: 60px 30px;
+  float: right;
+}
 
 
 
