@@ -10,14 +10,14 @@ body {
 
 h1 {
   font-family: 'Bree Serif', serif;
-  color: #222;
+  color: #eee;
 }
 
 p {
   font-family: 'Alegreya', serif;
   font-size: 16px;
   font-weight: 500;
-  color: #222;
+  color: #ccc;
 }
 
 .demo {
@@ -232,7 +232,7 @@ p {
 
 .section {
   margin: 0 0 0 0;
-  background-color: #848586;
+  background-color: rgba(13, 18, 24, 1);
   padding: 2% 0;
 }
 
@@ -284,8 +284,35 @@ p {
 
 .section2 {
   margin-top: 0;
-  border-top: 15px solid #0D1218;
 }
+
+.bottomborder {
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgba(13, 18, 24, 1), rgba(132, 133, 134, 1));
+  position: relative;
+}
+
+.bottomborder2 {
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgba(132, 133, 134, 1), rgba(13, 18, 24, 1));
+  position: relative;
+}
+
+.bottomborder3 {
+  height: 1px;
+  position: relative;
+  background-color: rgba(132, 133, 134, 1);
+}
+
+.bottomborderside {
+  height: 1px;
+  position: relative;
+  background-color: rgba(13, 18, 24, 1);
+}
+
+
 /*Resume betton*/
 
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
