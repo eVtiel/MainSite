@@ -1,0 +1,22 @@
+{
+  "name": "main-site",
+  "version": "1.0.0",
+  "description": "This is my web site to show my phojects, using javascript and bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eVtiel/MainSite.git"
+  },
+  "author": "Sunder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eVtiel/MainSite/issues"
+  },
+  "homepage": "https://github.com/eVtiel/MainSite#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
