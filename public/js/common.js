@@ -19,3 +19,9 @@ jQuery(window).resize(function() {
     jQuery(".footer1, .footer2").css('height', '684');
   }
 });
+
+$("#resumeButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".fores").offset().top
+    }, 1000);
+});
