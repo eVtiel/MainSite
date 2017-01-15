@@ -25,6 +25,14 @@ app.get('/bookshelf', function(request, response){
   response.render('pages/bookshelf');
 });
 
+app.get('/gym', function(request, response){
+  response.render('pages/gym');
+});
+
+app.get('/statusbox', function(request, response){
+  response.render('pages/statusbox');
+});
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
