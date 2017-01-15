@@ -33,6 +33,10 @@ app.get('/statusbox', function(request, response){
   response.render('pages/statusbox');
 });
 
+app.get('/nearme', function(request, response){
+  response.render('pages/nearme');
+});
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
