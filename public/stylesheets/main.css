@@ -1,0 +1,428 @@
+/* $('body').css('overflow', 'auto') */
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Bree Serif', serif;
+  color: #eee;
+}
+
+p {
+  font-family: 'Alegreya', serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.demo {
+  width: 100px;
+  height: 102px;
+  border-radius: 100%;
+  position: fixed;
+  top: 45%;
+  left: calc(50% - 50px);
+  z-index: 1001;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.circle .inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 5px solid rgba(0, 255, 170, 0.7);
+  border-right: none;
+  border-top: none;
+  backgroudn-clip: padding;
+  box-shadow: inset 0px 0px 10px rgba(0, 255, 170, 0.15);
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.circle:nth-of-type(0) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.circle:nth-of-type(0) .inner {
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+
+.circle:nth-of-type(1) {
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+.circle:nth-of-type(1) .inner {
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+
+.circle:nth-of-type(2) {
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+}
+.circle:nth-of-type(2) .inner {
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+
+.demo {
+  -webkit-animation: spin 5s infinite linear;
+          animation: spin 5s infinite linear;
+}
+
+/* Loader */
+#loader-wrapper .loader-section {
+	position: fixed;
+	top: 0;
+	width: 51%;
+	height: 100%;
+	background: #222;
+	z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+	left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+	right: 0;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+   -webkit-transform: translateX(-100%);
+           transform: translateX(-100%);
+
+   -webkit-transition: all 0.5s 0.3s ease-out;
+			  transition: all 0.5s 0.3s ease-out;
+
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+	-webkit-transform: translateX(100%);
+           transform: translateX(100%);
+
+   -webkit-transition: all 0.5s 0.3s ease-out;
+			  transition: all 0.5s 0.3s ease-out;
+
+}
+
+.loaded #loader .demo {
+	opacity: 0;
+
+	-webkit-transition: all 0.5s ease-out;
+			  transition: all 0.5s ease-out;
+}
+
+.loaded #loader-wrapper {
+	visibility: hidden;
+}
+
+/* Loader end */
+
+
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.z1 {
+  z-index: 999;
+}
+
+.name {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 370px;
+  font-family: 'Rancho', cursive;
+  font-size: 6.2em;
+  font-weight: 500;
+  color: #eee;
+  text-align: center;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
+}
+
+.buttons {
+  position: relative;
+  bottom: 200px;
+}
+
+.projects {
+  margin-top: 30px;
+  background-color: #0D1218;
+  font-family: 'Rancho', cursive;
+  font-size: 44px;
+  color: #0fa;
+  text-align: center;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
+}
+
+
+.picture {
+	background: url('../images/stardust.png');
+  background-repeat: repeat;
+}
+
+.section {
+  margin: 0 0 0 0;
+  background-color: rgba(13, 18, 24, 1);
+  padding: 2% 0;
+}
+
+
+.section a {
+  margin: 0 2%;
+}
+
+.section img {
+  padding: 0;
+  
+  transition: .2s;
+}
+
+.section img:hover {
+  opacity: .9;
+  cursor: pointer;
+  box-shadow: 3px 7px 12px 1px rgba(0,0,0,0.75);
+}
+
+.section p {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.section h1 {
+  margin-left: 10px;
+}
+
+.section div a {
+  margin: 12% 0 0 0;
+  color: #0fa;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  float: right;
+
+  transition: .2s;
+
+}
+
+.section div a:hover {
+  opacity: .7;
+}
+
+.section1 {
+
+}
+
+.section2 {
+  margin-top: 0;
+}
+
+.bottomborder {
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgba(13, 18, 24, 1), rgba(132, 133, 134, 1));
+  position: relative;
+}
+
+.bottomborder2 {
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgba(132, 133, 134, 1), rgba(13, 18, 24, 1));
+  position: relative;
+}
+
+.bottomborder3 {
+  height: 1px;
+  position: relative;
+  background-color: rgba(132, 133, 134, 1);
+}
+
+.bottomborderside {
+  height: 1px;
+  position: relative;
+  background-color: rgba(13, 18, 24, 1);
+}
+
+
+/*Resume betton*/
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+.button a    { text-decoration: none; }
+.button p    { text-align: center; }
+.button sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
+
+.button
+{
+  font-family: "Nunito", sans-serif; font-size: 24px; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #c6c6c6;
+
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  
+  margin: 1em auto;
+  
+  position: absolute; 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 20px 0;
+  width: 220px;
+  height:75px;
+
+  background: #c6c6c6;
+  border: 1px solid #c6c6c6;
+  color: #333;
+  overflow: hidden;
+  
+  transition: all 0.5s;
+}
+
+.button:hover, .button:active 
+{
+  cursor: pointer;
+  text-decoration: none;
+  color: #0fa;
+  border-color: #0fa;
+  background: #333;
+}
+
+
+.button span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.button span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.button:hover span, .button:active span 
+{
+  padding-right: 30px;
+}
+
+.button:hover span:after, .button:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #0fa;
+  right: 0;
+  top: 50%;
+} 
+
+.fores {
+  background-color: rgba(0,0,0,.2);
+
+}
+
+.footer1 {
+  height: 684px;
+
+  background: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.9))
+}
+
+.footer2 {
+  height: 684px;
+  background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,1))
+}
+
+.fores img {
+  margin: 60px 30px;
+  float: right;
+}
+
+
+

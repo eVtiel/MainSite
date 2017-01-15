@@ -23,5 +23,5 @@ jQuery(window).resize(function() {
 $("#resumeButton").click(function() {
     $('html, body').animate({
         scrollTop: $(".fores").offset().top
-    }, 1000);
+    }, 500);
 });
