@@ -1,6 +1,6 @@
 # Main site
 
-This is my web site to show my phojects, using javascript and bootstrap.
+This is my web site to show my projects, using javascript and bootstrap.
 
 ### Version
 
