@@ -21,6 +21,11 @@ app.get('/flipboard', function(request, response){
   response.render('pages/flipboard');
 });
 
+app.get('/bookshelf', function(request, response){
+  response.render('pages/bookshelf');
+});
+
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
