@@ -37,27 +37,30 @@ function initBannerVideoSize(element){
 
 function scaleBannerVideoSize(element){
 
-    var windowWidth = $(window).width(),
-    windowHeight = $(window).height() + 5,
+    var windowWidth = $(document).width(),
+    windowHeight = $(window).height() + 100,
     videoWidth,
     videoHeight;
 
-    console.log(windowHeight);
+    console.log(windowWidth);
 
     $(element).each(function(){
         var videoAspectRatio = $(this).data('height')/$(this).data('width');
 
         $(this).width(windowWidth);
+        videoHeight = windowHeight;
+        videoWidth = videoHeight / videoAspectRatio;
+        $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+        $(this).width(videoWidth).height(videoHeight);
+
+        $('.homepage-hero-module .video-container video').removeClass('fadeIn animated');
 
         if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
 
-            $(this).width(videoWidth).height(videoHeight);
+
         }
 
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
     });
 }
