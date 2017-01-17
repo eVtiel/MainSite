@@ -25,3 +25,36 @@ $("#resumeButton").click(function() {
         scrollTop: $(".fores").offset().top
     }, 500);
 });
+
+// jQuery('.tmproject').click(function(){
+//   $(this).data('clicked', true);
+
+// if(jQuery('.section').data('clicked')) {
+// 	 		$(this).css('background-color', '#a91b0d');
+// 	} 
+// });
+
+
+
+// sections size
+
+	$('.tmproject').click(function(){
+
+		$ (this).parent(this).toggleClass('sectionHeight');
+	});
+
+// hover color
+
+	$('.tmproject').click(function(){
+
+		$ (this).addClass('tmclicked');
+	});
+
+// open all prajects
+
+	$('#allProjects').click(function(){
+		$ ('.section').toggleClass('sectionHeight');
+
+	});
+
+

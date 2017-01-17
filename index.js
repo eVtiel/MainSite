@@ -37,6 +37,24 @@ app.get('/nearme', function(request, response){
   response.render('pages/nearme');
 });
 
+app.get('/outbox', function(request, response){
+  response.render('pages/outbox');
+});
+
+app.get('/mj', function(request, response){
+  response.render('pages/mj');
+});
+
+app.get('/pocket', function(request, response){
+  response.render('pages/pocket');
+});
+
+app.get('/is', function(request, response){
+  response.render('pages/is');
+});
+
+
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));

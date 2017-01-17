@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Alex Shapovalov</title>
-	<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="stylesheets/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Alegreya|Bree+Serif|Source+Sans+Pro" rel="stylesheet">
+		<% include ../partials/head.ejs %>
 </head>
 <body>
-		
+<!-- 	<video autoplay loop muted class="bgvideo" id="bgvideo">
+   	<source src="video/Window-Snow/MP4/Window-Snow.mp4" type="video/mp4"></source>
+   </video>
+ -->
 	<div class="homepage-hero-module">
 	    <div class="video-container">
 	        <div class="filter"></div>
@@ -57,100 +56,10 @@
 		</div>
 
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 projects">Projects</div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder" ></div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bottomborder3" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder2" ></div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-		</div>
-
-		<div class="picture row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section section1">
-				<a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-11"><img src="https://pp.vk.me/c638728/v638728670/1bc9f/CoX36iEpun8.jpg" alt="mainscreenshot" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"></a>
-				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<h1>Login App</h1>
-					<p>This is a user login and registration app using Node.js, Express, Passport and Mongoose.</p>
-					<a target="_blank" href="https://github.com/eVtiel/LoginApp">https://github.com/eVtiel/LoginApp</a>
-				</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 projects">Projects <span id="allProjects">all</span></div>
+		<% include ../partials/line.ejs %>
 			</div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder" ></div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bottomborder3" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder2" ></div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-		</div>
-		<div class="picture row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section section2">
-				<a href="/nearme" class="col-lg-4 col-md-4 col-sm-4 col-xs-11"><img src="https://pp.vk.me/c639519/v639519670/a48/w_-Tw2yVc1M.jpg" alt="mainscreenshot" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"></a>
-				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<h1>What is Near Me</h1>
-					<p>Simple AngularJS app for exploring NYC. Using LeaFlet and Wikipedia API.</p>
-					<a target="_blank" href="https://github.com/eVtiel/What-is-near-me">https://github.com/eVtiel/WhatisNearMe</a>
-				</div>
-			</div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder" ></div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bottomborder3" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder2" ></div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-		</div>
-
-		<div class="picture row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section section2">
-				<a href="/flipboard" class="col-lg-4 col-md-4 col-sm-4 col-xs-11"><img src="https://pp.vk.me/c638728/v638728670/1bc91/m4pzl3NRk8E.jpg" alt="mainscreenshot" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"></a>
-				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<h1>Flip Board</h1>
-					<p> Simple site with a jQuery slider</p>
-					<a target="_blank" href="https://github.com/eVtiel/flipboard">https://github.com/eVtiel/Flipboard</a>
-				</div>
-			</div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder" ></div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bottomborder3" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder2" ></div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-		</div>
-						<div class="picture row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section section2">
-					<a href="/bookshelf" class="col-lg-4 col-md-4 col-sm-4 col-xs-11"><img src="https://pp.vk.me/c638728/v638728670/1bc8a/8qvlTUO-RsU.jpg" alt="mainscreenshot" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"></a>
-					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-						<h1>Book Shelf</h1>
-						<p>Exploring the basics of AngularJS.</p>
-						<a target="_blank" href="https://github.com/eVtiel/bookshelf">https://github.com/eVtiel/bookshelf</a>
-					</div>
-				</div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder" ></div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bottomborder3" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder2" ></div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			</div>
-			<div class="picture row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section section2">
-					<a href="/statusbox" class="col-lg-4 col-md-4 col-sm-4 col-xs-11"><img src="https://pp.vk.me/c638728/v638728670/1bca6/OeljmRVERIc.jpg" alt="mainscreenshot" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"></a>
-					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-						<h1>Status Box</h1>
-						<p>Small jQuery component with limit on number of characters.</p>
-						<a target="_blank" href="https://github.com/eVtiel/status-boxjs">https://github.com/eVtiel/status-boxjs</a>
-					</div>
-				</div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder" ></div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bottomborder3" ></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bottomborder2" ></div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 bottomborderside" ></div>
-			</div>
-			<div class="picture row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section section2 noborder">
-					<a href="/gym" class="col-lg-4 col-md-4 col-sm-4 col-xs-11"><img src="https://pp.vk.me/c638728/v638728670/1bc98/S9aSeOzn4J0.jpg" alt="mainscreenshot" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"></a>
-					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-						<h1>The Gym</h1>
-						<p>Another example of responsive site with a jQuery slider<p>
-						<a target="_blank" href="https://github.com/eVtiel/gym">https://github.com/eVtiel/gym</a>
-					</div>
-				</div>
-			</div>
+		<% include ../partials/projects.ejs %>
 
 		<div class="row fores z1">
 			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 footer1">
@@ -164,12 +73,12 @@
 				Working at your company would allow me to implement my communication, professional skills and let me grow as senior full stack developer.<br /><br />
 				Please take a moment to attach my resume. I believe I have the qualifications what you need and I look forward to hearing from you soon.<br /><br />
 				Sincerely,<br /><br /><br />
-				Aleksand Shapovalov.
+				Aleksandr Shapovalov.
 				</p>
 			</div>
 			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 footer2">
-				<a target="_blank" href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=c189dd9f16&view=att&th=158f4c5566f5b904&attid=0.1&disp=inline&realattid=f_iwmjoxfm0&safe=1&zw&saddbat=ANGjdJ_9gvrvL_2jxGXFbvoAJyPmfGe1R4aYqb1VjjrcHRXO5QUadmrWNFDkve6wMcAnDAYz34B28lcnPTBtJTHDiBHshx2ydS0heqQw2_lT3QIK6ucf4GDs6gOV8xYr09aabhYvIzX7bYYNQzCv-HrFYZJunUUv29VwzTZzdyaJS87nPtJiHs0VWuMg7KdF2FLnK4w9wclg7slV6UE9ES7mvYKqCg6JgsQbVQaIbEcVGtrJa3H2xZTWQeY3GHpja9ZForpc3dcR8062fBmkJlEo0nAjcYNH-IYRFSPjxTNOs8r7zv0el5-eplQyTLii0QyqizDZRhLXI7HQBIkV-3KRg9_6Zd8p6Oh5gL1le_dPa7IPPI8Tx5_qOEFgvqX8dFZdJO_EiXGhszvpr-IHmRope4364NDO-tTJLZraFbtaPlBIPU-p5VK-nNSMgRf2jqWyzD_dsybRz6xmYaZXXhIxiA0BRE1okyGsje6wPoOEkUuCGWTxWMp1rVS2E-8fhXBtnJt6uo_W6TExrVjoCg-NHcA_IoSrRi8ZBFhVNF0u9VvcQ3Liswact8dRMeqm3kwA6MeoO9OBOO59GzDk3RPNgrObNSzJblM6B-1PvpNIh6dywaVKP8H-RZM0bS4GDDLySJFc1dmJcKDjG5hJbJhJVpYZt3z9E4G6bP3ZxA">
-					<img src="https://pp.vk.me/c638728/v638728670/1bcad/qYx9z1HM1a8.jpg" alt="linktoresume" class="img-responsive">
+				<a target="_blank" href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=c189dd9f16&view=att&th=159ad2cc6f2fed7b&attid=0.1&disp=inline&realattid=f_iy1pnhn90&safe=1&zw&saddbat=ANGjdJ9tsNqe4HZJfWp6uddLCaeP7h7lpL9Ou3XVV_-0IJha6xvomsgKRDdmWojXYg7sxx57534Sq_iEBubQa-54MaJ-SyTm_x56TXkeLX4Dw9ycGRC675K3edo8DER_QhEJZuBMzcBBXrSLY2mQgzV-oVhKxAtGTvJjpDkjV2oTzAJctj_ptqWT1oXQ7O1L9OU7fVX0B9U0z2gXpDCmyuhANh0AQQgdw6-BoQy1ay372jHkZ9tO7yCIJ8iBdSUySpoBg0sJ_vnXvfdiSW9IMpC00cUld4NphSw1k5zKLrsUv2zPQo25PiLKo6rfkIZXii8sEIivScY3e9XqHUBTui2JnR7mUwKwGBdKiZkjnlkEQQwf5FH1yWSKRIiqBMqNfA8QlSUbkTLw4gz6nZvGNFZdKW-fYq_qgrAxLPJ6SfWLiqzOmC_-WMoEmJMm_27RHZABUY2zjox9sTtNjDnWv7jYakiUka_67RbOFVVel_IT7PJHcrfYRj28qxNANkFxn6G6bsnJAwkjmHiBJwWDlJzPjSwKCDKfkG9zca3WjUSMbbEloJswk6SezZF3BDuINWXvhBf-47LOkbpLqPiEVX5NsV-RZ3BMMN463dF6XQJRrZVQCNREYV2HTQ_9NoNC-M6z477ilPTt18QLSL00Gjm7-YBovJxl7IrCDxyzeg">
+					<img src="https://pp.vk.me/c626225/v626225670/44133/wYG3zEWPSVI.jpg" alt="linktoresume" class="img-responsive">
 				</a>
 			</div>
 		</div>

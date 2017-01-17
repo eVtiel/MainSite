@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/outbox.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
+    
+  </head>
+  <body ng-app="OutboxApp">
+    <div class="header">
+      <div class="container">
+        <img src="/img/logo.svg" width="140" height="150">
+      </div>
+    </div>
+
+    <div class="main">
+        			<div ng-view></div>
+      <div class="container">
+
+
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="/js/outjs/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="/js/outjs/controllers/HomeController.js"></script>
+    <script src="/js/outjs/controllers/EmailController.js"></script>
+
+    <!-- Services -->
+    <script src="/js/outjs/services/emails.js"></script>
+  </body>
+</html>
