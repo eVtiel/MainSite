@@ -53,6 +53,21 @@ app.get('/is', function(request, response){
   response.render('pages/is');
 });
 
+app.get('/ic', function(request, response){
+  response.render('pages/ic');
+});
+
+
+app.get('/broadway', function(request, response){
+  response.render('pages/broadway');
+});
+
+
+app.get('/headliners', function(request, response){
+  response.render('pages/headliners');
+});
+
+
 
 
 
